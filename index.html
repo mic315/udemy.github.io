@@ -1,73 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <title>Grid Layout iPad</title>
-  <link rel="stylesheet" href="css/reset.css"/>
-  <link rel="stylesheet" href="css/style.css"/>
-
-    <script>
-  (function(d) {
-    var config = {
-      kitId: 'dsd7crf',
-      scriptTimeout: 3000,
-      async: true
-    },
-    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-  })(document);
-</script>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Design Leaker | web</title>
 </head>
-
 <body>
-<div class="container">
-    <header class="header">
-        <h1>都市型野鳥観察クラブ</h1>
-        <ul>
-            <li><a href="#">Aout Us</a></li>
-            <li>Contact</li>
-        </ul>
-    </header>
-    <div class="TopPhoto">
-        <img src="images/TopPhoto.png" alt="メインイメージ画像">
-    </div>
-    <main class="main">
-        <h2>メジロ</h2>
-        <figure class="photo">
-            <img src="images/B_mejiro_main.png"  alt="枝に留まるメジロ">
-            <figure class="mejiros">
-                <img src="images/B_mejiro-1.png"  alt="蜜を吸うメジロ">
-                <img src="images/B_mejiro-2.png"  alt="羽ばたくメジロ">
-                <img src="images/B_mejiro-3.png" alt="枝に留まるメジロ">
-            </figure>
-        </figure>
-        <article class="main-text">
-            <p class="p1">学名：Zosterops japonicus
-<br>分類：スズメ目メジロ科メジロ属<br>
-全長：12cm<br>
-分布：日本では冬季の寒冷地を除く全国で、低地から山地にまで広く分布する。市街地の緑地のある公園などでも見られる<br>
-生態：雑食だが、花の蜜や果汁を好み、育雛期には虫なども捕食する。</p>
-            <p class="p2">　夏の間は涼しい山で過ごし、冬になると里山に降りて来る鳥。姿が美しく鳴き声の良さから人気があり、一時乱獲され たため絶命が心配されたが、最近は回復してきて街でも冬にはみ られるようになった。特に民家の庭先の梅の花や桜の花の蜜を好 んで集まる。</p>
-            <p class="button_back">戻る</p>
-        </article>
-    </main>
-    <figure class="SNS">
-        <figure class="SNS_Logo">
-            <img src="images/sns_1.png" alt="facebookのロゴマーク">
-            <img src="images/sns_2.png" alt="twitterのロゴマーク">
-            <img src="images/sns_3.png" alt="Lineのロゴマーク">
-            <img src="images/sns_4.png" alt="googleのロゴマーク">
-        </figure>
-    </figure>
-    <footer class="footer">
-        <p class="footer_title">このサイトの利用について</p>
-        <div class="footer_textbox">
-            <p class="footer_text">プライバシーポリシー<br>関連団体</p>
-            <p class="footer_text">情報公開について<br>著作権について</p>
-            <p class="footer_text">コピーライト<br>サイトマップ</p>
+    <header>
+        <div class="header-inner">
+            <h1>
+                <img src="images/logo.png" alt="">
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#">ウェブデザイン</a></li>
+                    <li><a href="#">WORDPRESS</a></li>
+                    <li><a href="#">jQuery</a></li>
+                    <li><a href="#">ウェブマーケティング</a></li>
+                </ul>
+            </nav>
         </div>
-    </footer>
-</div>
-    
+    </header>
+    <main class="wrapper">
+        <div class="top-contents">
+            <div class="top-pickup">
+                <p class="pickup-thumb">
+                    <img src="images/pickup.jpg" alt="">
+                    <span class="category-tag">ウェブデザイン</span>
+                </p>
+                <dl>
+                    <dt><a href="#">タイトル</a></dt>
+                    <dd>2022/8/5</dd>
+                </dl>
+            </div>
+            <div class="top-runking">
+                <h2>人気記事ランキング</h2>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                <img src="images/tmb_1.jpg" alt="">
+                                <span class="ranking-number">1</span>
+                            </dt>
+                            <dd>
+                                <h3><a href="#">記事タイトル</a></h3>
+                                <span class="ranking-tag webdesign">ウェブデザイン</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <img src="images/tmb_2.jpg" alt="">
+                                <span class="ranking-number">2</span>
+                            </dt>
+                            <dd>
+                                <h3><a href="#">記事タイトル</a></h3>
+                                <span class="ranking-tag wordpress">WORDPRESS</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <img src="images/tmb_3.jpg" alt="">
+                                <span class="ranking-number">3</span>
+                            </dt>
+                            <dd>
+                                <h3><a href="#">記事タイトル</a></h3>
+                                <span class="ranking-tag webmarketing">ウェブマーケティング</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <img src="images/tmb_4.jpg" alt="">
+                                <span class="ranking-number">4</span>
+                            </dt>
+                            <dd>
+                                <h3><a href="#">記事タイトル</a></h3>
+                                <span class="ranking-tag webdesign">ウェブデザイン</span>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sub-content">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </main>
 </body>
 </html>
