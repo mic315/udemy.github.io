@@ -1,0 +1,263 @@
+@use "../globals/index" as *;
+@use "../parts/common" as *;
+
+.travel {
+    @extend .content-width;
+    @extend .mb-lg;
+
+    &__inner {
+        @extend .flex;
+        justify-content: space-between;
+        background-color: #eaebe6;
+        padding: 15px;
+        position: relative;
+        z-index: 0;
+
+        @include mq(md) {
+            padding: 50px;
+        }
+
+        @include mq(xl) {
+            padding: 50px 150px;
+        }
+    }
+
+    &__img {
+        @extend .mb-sm;
+        height: 300px;
+        box-shadow: inset 0 0 30px black;
+
+        @include mq(md) {
+            flex-basis: 47%;
+        }
+
+        @include mq(lg) {
+            height: 400px;
+            flex-basis: 47%;
+        }
+
+        & > img {
+            opacity: 1;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: -1;
+        }
+    }
+
+    &__texts {
+        @extend .pb-sm;
+        @include mq(md) {
+            display: flex;
+            align-items: flex-end;
+            flex-basis: 47%;
+        }
+        &-inner {
+        }
+
+        &.inview {
+            & .travel__title::before {
+                animation: scaleX ease;
+                animation-duration: 0.3s;
+                animation-delay: 1.5s;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+
+    &__title {
+        position: relative;
+        &::before {
+            display: none;
+            position: absolute;
+            content: "";
+            height: 1px;
+            width: 100px;
+            background-color: black;
+            top: 50%;
+            left: -120px;
+            transform: scaleX(0);
+            transform-origin: right;
+
+            @include mq(lg) {
+                display: block;
+            }
+        }
+    }
+
+    &__sub {
+    }
+
+    &__description {
+        @include mq(lg) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__btn {
+    }
+}
+
+@keyframes scaleX {
+    0% {
+        transform: scaleX(0%);
+    }
+
+    100% {
+        transform: scaleX(100%);
+    }
+}
+
+.houses {
+    @extend .content-width;
+    @extend .mb-lg;
+
+    &__inner {
+        @extend .flex;
+    }
+
+    &__title {
+        @extend .mb-sm;
+        @extend .font-lr;
+    }
+
+    &__item {
+        @include mq(md) {
+            flex-basis: 50%;
+        }
+        @include mq(lg) {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__btn {
+        text-align: center;
+        flex-basis: 100%;
+    }
+}
+
+.popular {
+    &__header {
+        @extend .content-width;
+    }
+
+    &__inner {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            height: 90%;
+            width: 100%;
+            background-color: #eaebe6;
+        }
+    }
+
+    &__container {
+        position: relative;
+        z-index: 2;
+        @extend .content-width;
+        @extend .flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        @include mq(md) {
+            flex-basis: 47%;
+        }
+        @include mq(lg) {
+            flex-basis: 25%;
+        }
+        @include mq(xl) {
+            flex-basis: 23%;
+        }
+    }
+
+    &__img {
+        height: 150px;
+
+        @include mq(lg) {
+            height: 335px;
+        }
+
+        & > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        @extend .mb-sm;
+        @extend .font-md;
+    }
+
+    &__btn {
+        text-align: center;
+        flex-basis: 100%;
+        @extend .mb-lg;
+    }
+}
+
+.footer {
+    @extend .content-width;
+    padding: 60px 0;
+
+    &__nav {
+        @extend .flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__ul {
+        width: 400px;
+        @extend .flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+    }
+
+    &__ul a {
+        text-decoration: none;
+        color: gray;
+    }
+    
+    &__li {
+        margin: 10px;
+        
+        @include mq(md) {
+            margin-left: 0;
+            margin-right: 30px;
+        }
+    }
+    
+    & > .logo {
+        font-size: 38px;
+        justify-content: center;
+        
+        @include mq(md) {
+            justify-content: flex-start;
+        }
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 42px;
+
+    &__img {
+        width: 0.7em;
+        & > img {
+            width: 100%;
+        }
+    }
+
+    &__stay {
+    }
+    &__world {
+        color: purple;
+    }
+}

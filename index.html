@@ -1,183 +1,208 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="オンラインで磨く、クリエイティブスキル">
-    <meta name="keywords" content="オンライン, クリエイティブ, ウェブデザイン, プログラミング, エンジニア, ライター, マーケティング">
-    <title>NESTschool</title>
-    <!-- スタイルシートの読み込み -->
-    <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles/vendors/css-reset.css">
+    <link rel="stylesheet" href="styles/vendors/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Document</title>
 </head>
 <body>
-    <header>
-        <div class="header-contents view-width">
-            <h1>
-                <a href="#"><img src="images/logo.png" alt=""></a>
-            </h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">授業内容</a>
-                    </li>
-                    <li>
-                        <a href="#">料金体制</a>
-                    </li>
-                    <li>
-                        <a href="#">ログイン</a>
-                    </li>
-                    <li>
-                        <a href="#">新規ご入会</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div class="main-visual">
-            <div class="main-text view-width">
-                <p>
-                    オンラインで磨く、<br>
-                    クリエイティブスキル
-                </p>
-                <dl>
-                    <dt><img src="images/nestonline.png" alt=""></dt>
-                    <dd>
-                        いつでも、どこでも、自分のペースで学べる、クリエイティブな学校。<br>
-                        「楽しみながら」をモットーに、現場のプロによるハイクオリティな講義を、動画形式で配信！
-                    </dd>
-                    <dd>
-                        <img src="images/more_info.png" alt="">
-                    </dd>
-                </dl>
-            </div>
-        </div>
-        <div class="lesson">
-            <div class="lesson-contents view-width">
-                <h2>授業内容</h2><span>楽しく学ぶをモットーに、常により楽しく質の高い授業展開を心がけています。</span>
-                <div class="lesson-detail">
-                    <div class="lesson-left">
-                        <h3>講師紹介</h3>
-                        <ul class="teachers">
-                            <li class="first">
-                                <dl>
-                                    <dt><img src="images/teacher01.jpg" alt=""></dt>
-                                    <dd class="name">田村花子</dd>
-                                    <dd class="comment">ウェブデザインに関することなら、任せてください！</dd>
-                                </dl>
-                            </li>
-                            <li>
-                                <dl>
-                                    <dt><img src="images/teacher02.jpg" alt=""></dt>
-                                    <dd class="name">田村花子</dd>
-                                    <dd class="comment">ウェブデザインに関することなら、任せてください！</dd>
-                                </dl>
-                            </li>
-                            <li>
-                                <dl>
-                                    <dt><img src="images/teacher03.jpg" alt=""></dt>
-                                    <dd class="name">田村花子</dd>
-                                    <dd class="comment">ウェブデザインに関することなら、任せてください！</dd>
-                                </dl>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="lesson-right">
-                        <h3>コース紹介</h3>
-                        <ul>
-                            <li>
-                                <dl>
-                                    <dt><img src="images/icon_photoshop.png" alt=""></dt>
-                                    <dd>Photoshopコース</dd>
-                                </dl>
-                            </li>
-                            <li>
-                                <dl>
-                                    <dt><img src="images/icon_ai.png" alt=""></dt>
-                                    <dd>Photoshopコース</dd>
-                                </dl>
-                            </li>
-                            <li>
-                                <dl>
-                                    <dt><img src="images/icon_pr.png" alt=""></dt>
-                                    <dd>Photoshopコース</dd>
-                                </dl>
-                            </li>
-                            <li>
-                                <dl>
-                                    <dt><img src="images/icon_fw.png" alt=""></dt>
-                                    <dd>Photoshopコース</dd>
-                                </dl>
-                            </li>
-                            <li>
-                                <dl>
-                                    <dt><img src="images/icon_dw.png" alt=""></dt>
-                                    <dd>Photoshopコース</dd>
-                                </dl>
-                            </li>
-                        </ul>
+    <div id="global-container">
+        <div id="container">
+            <div id="content">
+                <div class="hero">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="hero__title">Enjoy Rich</div>
+                                <img src="images/image-1.jpg" alt="" />
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="hero__title">Fantastic</div>
+                                <img src="images/image-2.jpg" alt="" />
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="hero__title">Experience</div>
+                                <img src="images/image-3.jpg" alt="" />
+                            </div>
+                        </div>
+                        <div class="hero__footer">
+                            <img class="hero__downarrow" src="images/arrow.svg" alt="">
+                            <span class="hero__scrolltext">scroll</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="price">
-            <div class="price-contents view-width">
-                <h2>料金体制</h2><span>学びたいと思った時がベストな時期。いつでも気軽に始めれるように、月額課金制です。</span>
-                <div class="price-detail">
-                    <ul class="price-list">
-                        <li>
-                            <dl>
-                                <dt>フリープラン</dt>
-                                <dd class="month-price">無料<span>/月</span></dd>
-                                <dd class="option">
-                                    <ul class="option-detail">
-                                        <li>・ 毎日１動画無料</li>
-                                        <li>・ コンテンツダウンロード（有料）</li>
-                                    </ul>
-                                </dd>
-                                <dd class="button">
-                                    <button class="membership">入会する</button>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>デザイナープラン</dt>
-                                <dd class="month-price">1,980円<span>/月</span></dd>
-                                <dd class="option">
-                                    <ul class="option-detail">
-                                        <li>・ 毎日１動画無料</li>
-                                        <li>・ コンテンツダウンロード（有料）</li>
-                                        <li>・ コンテンツダウンロード（有料）</li>
-                                    </ul>
-                                </dd>
-                                <dd class="button">
-                                    <button class="membership">入会する</button>
-                                </dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>コンプリートプラン</dt>
-                                <dd class="month-price">3,980<span>/月</span></dd>
-                                <dd class="option">
-                                    <ul class="option-detail">
-                                        <li>・ 毎日１動画無料</li>
-                                        <li>・ コンテンツダウンロード（有料）</li>
-                                        <li>・ コンテンツダウンロード（有料）</li>
-                                    </ul>
-                                </dd>
-                                <dd class="button">
-                                    <button class="membership">入会する</button>
-                                </dd>
-                            </dl>
-                        </li>
+            <div id="main-content">
+                <main>
+                    <section class="travel">
+                        <div class="travel__inner">
+                            <div class="travel__img">
+                                <img src="images/image-travel.jpg" alt="" class="img-zoom">
+                            </div>
+                            <div class="travel__texts inview">
+                                <div class="travel__texts-inner">
+                                    <div class="travel__title main-title">
+                                        <span class="purple">Travel</span>
+                                        <span>the world</span>
+                                    </div>
+                                    <div class="travel__sub sub-title">
+                                        世界中を旅しよう
+                                    </div>
+                                    <div class="travel__description">
+                                        <p>
+                                            世界１５０ヶ国で<br>
+                                            利用できる民泊サービスです。<br>
+                                            あなたの望む宿がきっと見つかります。
+                                        </p>
+                                    </div>
+                                    <div class="travel__btn">
+                                        <button class="btn filled">
+                                            もっと詳しく
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="houses">
+                        <div>
+                            <h2 class="main-title tween-animate-title">Find Your House</h2>
+                            <p class="sub-title tween-animate-title">お気に入りに宿泊先を見つけましょう。</p>
+                        </div>
+                        <div class="houses__inner">
+                            <div class="houses__item">
+                                <div class="cover-slide hover-darken">
+                                    <div class="bg-img-zoom img-bg50" style="background-image: url(images/villa-1.jpg);"></div>
+                                </div>
+                                <p class="houses__title">
+                                    House 1
+                                </p>
+                            </div>
+                            <div class="houses__item">
+                                <div class="cover-slide hover-darken">
+                                    <div class="bg-img-zoom img-bg50" style="background-image: url(images/villa-2.jpg);"></div>
+                                </div>
+                                <p class="houses__title">
+                                    House 2
+                                </p>
+                            </div>
+                            <div class="houses__item">
+                                <div class="cover-slide hover-darken">
+                                    <div class="bg-img-zoom img-bg50" style="background-image: url(images/villa-3.jpg);"></div>
+                                </div>
+                                <p class="houses__title">
+                                    House 3
+                                </p>
+                            </div>
+                            <div class="houses__item">
+                                <div class="cover-slide hover-darken">
+                                    <div class="bg-img-zoom img-bg50" style="background-image: url(images/villa-4.jpg);"></div>
+                                </div>
+                                <p class="houses__title">
+                                    House 4
+                                </p>
+                            </div>
+                            <div class="houses__item">
+                                <div class="cover-slide hover-darken">
+                                    <div class="bg-img-zoom img-bg50" style="background-image: url(images/villa-5.jpg);"></div>
+                                </div>
+                                <p class="houses__title">
+                                    House 5
+                                </p>
+                            </div>
+                            <div class="houses__item">
+                                <div class="cover-slide hover-darken">
+                                    <div class="bg-img-zoom img-bg50" style="background-image: url(images/villa-6.jpg);"></div>
+                                </div>
+                                <p class="houses__title">
+                                    House 6
+                                </p>
+                            </div>
+                            <div class="houses__btn">
+                                <button class="btn slide-bg">もっと詳しく</button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="popular">
+                        <div class="popular__header">
+                            <h2 class="main-title tween-animate-title">Popular Place</h2>
+                            <p class="sub-title tween-animate-title">人気の観光地で宿泊先を見つけましょう</p>
+                        </div>
+                        <div class="popular__inner">
+                            <div class="popular__container">
+                                <div class="popular__item">
+                                    <div class="popular__img">
+                                        <img src="images/image-p1.jpg" alt="">
+                                    </div>
+                                    <p class="popular__title">パリ</p>
+                                </div>
+                                <div class="popular__item">
+                                    <div class="popular__img">
+                                        <img src="images/image-p2.jpg" alt="">
+                                    </div>
+                                    <p class="popular__title">ニューヨーク</p>
+                                </div>
+                                <div class="popular__item">
+                                    <div class="popular__img">
+                                        <img src="images/image-p3.jpg" alt="">
+                                    </div>
+                                    <p class="popular__title">香港</p>
+                                </div>
+                                <div class="popular__item">
+                                    <div class="popular__img">
+                                        <img src="images/image-p4.jpg" alt="">
+                                    </div>
+                                    <p class="popular__title">東京</p>
+                                </div>
+                            </div>
+                            <div class="popular__btn">
+                                <button class="btn cover-3d"><span>一覧から探す</span></button>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+            <footer class="footer">
+                <div class="logo">
+                    <img src="images/logo.svg" class="logo__img" alt="">
+                    <span class="logo__stay">Stay</span>
+                    <span class="logo__world">World</span>
+                </div>
+                <nav class="footer__nav">
+                    <ul class="footer__ul">
+                        <li class="footer__li"><a href="#">Service</a></li>
+                        <li class="footer__li"><a href="#">Contact</a></li>
+                        <li class="footer__li"><a href="#">Company</a></li>
+                        <li class="footer__li"><a href="#">Sitemap</a></li>
                     </ul>
-                </div>
-            </div>
+                    <div class="footer__copyright">
+                        &copy; Code
+                    </div>
+                </nav>
+            </footer>
         </div>
-    </main>
-    <footer>
-        Copyright (C) 2010-2015 Campus inc. All Rights Reserved.
-    </footer>
+    </div>
+
+    <script src="scripts/vendors/gsap.min.js"></script>
+    <script src="scripts/vendors/swiper-bundle.min.js"></script>
+    <script src="scripts/libs/hero-slider.js"></script>
+    <script src="scripts/libs/scroll.js"></script>
+    <script src="scripts/vendors/scroll-polyfill.js"></script>
+    
+    <script src="scripts/libs/text-animation.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
